@@ -1,0 +1,19 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+  #   depends_on:
+  #     - mongodb
+  # mongodb:
+  #   image: mongodb/mongodb-community-server:latest
+  #   container_name: mongodb
+  #   ports:
+  #     - "27017:27017"
+  #   environment:
+  #     - MONGO_INITDB_ROOT_USERNAME=admin
+  #     - MONGO_INITDB_ROOT_PASSWORD=password
+  #     - MONGO_INITDB_ROOT_DATABASE=list-up-db
+  #   volumes:
+  #     - ./data:/data/db
+  #   restart: unless-stopped
